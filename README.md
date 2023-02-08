@@ -8,7 +8,7 @@
 
 3. [Zabbix. Часть 2](9-03.md)
 
-4. [Prometheus](9-04.md)
+4. [Prometheus](Install Prometheus on Debian.md)
 
 5. [Prometheus. Часть 2](9-05.md)
 
