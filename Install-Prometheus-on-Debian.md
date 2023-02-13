@@ -136,3 +136,21 @@ $ sudo systemctl start node-exporter
 $ sudo systemctl status node-exporter
 ```
 ---
+## ***Adding a Node Exporter to Prometheus***
+
+### *Edit the Prometheus configuration. Add the address of the exporter to **scrape_configs:***
+```bash
+$ sudo nano /etc/prometheus/prometheus.yml
+```
+```yaml
+scrape_conﬁgs:
+— job_name: 'prometheus'
+scrape_interval: 5s
+static_conﬁgs:
+— targets: ['localhost:9090', 'localhost:9100']
+```
+
+### *Restart Prometheus:*
+```bash
+$ sudo systemctl restart prometheus
+```
