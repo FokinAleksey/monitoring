@@ -17,15 +17,15 @@ $ sudo chown prometheus:prometheus /var/lib/prometheus
 ### *Download prometheus [GitHub](https://github.com/prometheus/prometheus/releases/)*
 ```bash
 $ cd ~
-$ wget https://github.com/prometheus/prometheus/releases/download/v2.0.0/prometheus-2.42.0.linux-amd64.tar.gz
-$ sha256sum prometheus-2.0.0.linux-amd64.tar.gz 
-e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46  prometheus-2.0.0.linux-amd64.tar.gz
-$ tar xvf prometheus-2.0.0.linux-amd64.tar.gz
-$ sudo cp prometheus-2.0.0.linux-amd64/prometheus /usr/local/bin/
-$ sudo cp prometheus-2.0.0.linux-amd64/promtool /usr/local/bin/
-$ sudo cp -r prometheus-2.0.0.linux-amd64/prometheus.yml /etc/prometheus/
-$ sudo cp -r prometheus-2.0.0.linux-amd64/consoles /etc/prometheus
-$ sudo cp -r prometheus-2.0.0.linux-amd64/console_libraries /etc/prometheus
+$ wget https://github.com/prometheus/prometheus/releases/download/v2.42.0/prometheus-2.42.0.linux-amd64.tar.gz
+$ sha256sum prometheus-2.42.0.linux-amd64.tar.gz 
+e12917b25b32980daee0e9cf879d9ec197e2893924bd1574604eb0f550034d46  prometheus-2.42.0.linux-amd64.tar.gz
+$ tar xvf prometheus-2.42.0.linux-amd64.tar.gz
+$ sudo cp prometheus-2.42.0.linux-amd64/prometheus /usr/local/bin/
+$ sudo cp prometheus-2.42.0.linux-amd64/promtool /usr/local/bin/
+$ sudo cp -r prometheus-2.42.0.linux-amd64/prometheus.yml /etc/prometheus/
+$ sudo cp -r prometheus-2.42.0.linux-amd64/consoles /etc/prometheus
+$ sudo cp -r prometheus-2.42.0.linux-amd64/console_libraries /etc/prometheus
 ```
 ### *Transfer file permissions to the Prometheus user:*
 ```bash
